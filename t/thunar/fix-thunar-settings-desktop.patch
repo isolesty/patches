@@ -1,0 +1,61 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ thunar (1.6.10-2) unstable; urgency=medium
+ .
+   * debian/thunar-settings.1 added, thanks François Wendling.   closes: #799434
+   * debian/thunar.manpages:
+     - add thunar-settings.1 to the list of installed manpages.
+Author: Yves-Alexis Perez <corsac@debian.org>
+Bug-Debian: https://bugs.debian.org/799434
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- thunar-1.6.10.orig/po/en_AU.po
++++ thunar-1.6.10/po/en_AU.po
+@@ -2823,7 +2823,7 @@ msgstr "Thunar is a fast and easy to use
+ #: ../thunar/thunar-window.c:3219 ../Thunar.desktop.in.in.h:3
+ #: ../thunar/thunar-settings.desktop.in.h:1
+ msgid "File Manager"
+-msgstr "File Manager"
++msgstr "File Manager Settings"
+ 
+ #: ../thunarx/thunarx-property-page.c:102
+ msgid "Label"
+--- thunar-1.6.10.orig/po/en_GB.po
++++ thunar-1.6.10/po/en_GB.po
+@@ -2832,7 +2832,7 @@ msgstr "Thunar is a fast and easy to use
+ #: ../thunar/thunar-window.c:3219 ../Thunar.desktop.in.in.h:3
+ #: ../thunar/thunar-settings.desktop.in.h:1
+ msgid "File Manager"
+-msgstr "File Manager"
++msgstr "File Manager Settings"
+ 
+ #: ../thunarx/thunarx-property-page.c:102
+ msgid "Label"
+--- thunar-1.6.10.orig/po/zh_CN.po
++++ thunar-1.6.10/po/zh_CN.po
+@@ -2791,7 +2791,7 @@ msgstr "Thunar 是 Xfce 桌面环境下�
+ #: ../thunar/thunar-window.c:3219 ../Thunar.desktop.in.in.h:3
+ #: ../thunar/thunar-settings.desktop.in.h:1
+ msgid "File Manager"
+-msgstr "文件管理器"
++msgstr "文件管理器设置"
+ 
+ #: ../thunarx/thunarx-property-page.c:102
+ msgid "Label"
