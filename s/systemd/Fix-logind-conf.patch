@@ -1,0 +1,23 @@
+Index: systemd-229/src/login/logind.conf
+===================================================================
+--- systemd-229.orig/src/login/logind.conf
++++ systemd-229/src/login/logind.conf
+@@ -18,10 +18,10 @@
+ #KillOnlyUsers=
+ #KillExcludeUsers=root
+ #InhibitDelayMaxSec=5
+-#HandlePowerKey=poweroff
++HandlePowerKey=ignore
+ #HandleSuspendKey=suspend
+ #HandleHibernateKey=hibernate
+-#HandleLidSwitch=suspend
++HandleLidSwitch=ignore
+ #HandleLidSwitchDocked=ignore
+ #PowerKeyIgnoreInhibited=no
+ #SuspendKeyIgnoreInhibited=no
+@@ -32,4 +32,4 @@
+ #IdleActionSec=30min
+ #RuntimeDirectorySize=10%
+ #RemoveIPC=yes
+-#UserTasksMax=12288
++#UserTasksMax=4096
